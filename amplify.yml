@@ -1,0 +1,11 @@
+version: 1
+frontend:
+  phases:
+    build:
+      commands:
+        - pip install -U sphinx
+        - make html
+  artifacts:
+    baseDirectory: _build/html
+    files:
+      - '**/*'
